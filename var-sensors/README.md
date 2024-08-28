@@ -21,31 +21,43 @@ Rileva un cambiamento di valori prima/dopo in una variabile.
   console.log(myVar.onChange);  // Output: false
 ```
 
-### C
-```c
-void onChangeCallback(int newValue) {
-  printf("Valore cambiato a: %d\n", newValue);
-}
+### C++
+```cpp
+#include <iostream>
+#include <functional>
 
-int main() {
-  // Creazione di una ReactiveVar
-  ReactiveVar* myVar = createReactiveVar(10);
+class ReactiveVar {
+  private:
+  int value;
+  std::function<void(int)> onChangeCallback;
 
-  // Imposta il callback onChange
-  setOnChange(myVar, onChangeCallback);
+  public:
+  // Costruttore per inizializzare la variabile con un valore
+  ReactiveVar(int initialValue) : value(initialValue), onChangeCallback(nullptr) {}
 
-  // Modifica il valore
-  setValue(myVar, 20);  // Output: Valore cambiato a: 20
+  // Getter per il valore
+  int getValue() const {
+    return value;
+  }
 
-  // Verifica se onChange è impostato
-  printf("onChange è impostato: %d\n", isOnChangeSet(myVar));  // Output: 1
+  // Setter per il valore, con chiamata al callback se il valore cambia
+  void setValue(int newValue) {
+    if (value != newValue) {
+      value = newValue;
+      if (onChangeCallback) {
+        onChangeCallback(newValue);
+      }
+    }
+  }
 
-  // Modifica il valore a un valore uguale, non si dovrebbe attivare il callback
-  setValue(myVar, 20);  // Nessun output
+  // Setter per il callback onChange
+  void setOnChange(std::function<void(int)> callback) {
+    onChangeCallback = callback;
+  }
 
-  // Libera la memoria allocata
-  free(myVar);
-
-  return 0;
-}
+  // Verifica se il callback onChange è impostato
+  bool isOnChangeSet() const {
+    return onChangeCallback != nullptr;
+  }
+};
 ```
