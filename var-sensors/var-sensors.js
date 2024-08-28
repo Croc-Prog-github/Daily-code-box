@@ -1,3 +1,4 @@
+/* v1.0.0 */
 function createReactiveVar(initialValue) {
   let value = initialValue;
   let onChangeCallback = null;
