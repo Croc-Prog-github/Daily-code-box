@@ -20,7 +20,7 @@ Rileva un cambiamento di valori prima/dopo in una variabile.
   myVar.onChange = null; // Rimuovi il callback onChange
   console.log(myVar.onChange);  // Output: false
 ```
-
+<!--
 ### C++
 ```cpp
 #include <iostream>
@@ -61,3 +61,4 @@ class ReactiveVar {
   }
 };
 ```
+-->
