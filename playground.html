@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily code box (Playground)</title>
+</head>
+<body>
+  <div style="display: flex;">
+    <div style="display: flex; flex-direction: column; resize: none; overflow: unset;">
+      <textarea name="html" id="html" placeholder="HTML5" tabindex="2" style="resize: vertical; height: 15vh; width: 35vw;">
+<!DOCTYPE html>
+<html>
+<head></head>
+<body></body>
+</html></textarea>
+      <textarea name="js" id="js" placeholder="JS" style="resize: vertical; height: 15vh; width: 35vw;"></textarea>
+    </div>
+    <iframe id="output" title="Output" style="height: auto; border: solid; width: 100%; overflow: auto;"></iframe>
+  </div>
+  <div id="Error" style="font-weight: bold; border: solid; height: 10vh; width: auto; overflow: auto;"></div>
+</body>
+</html>
+
+<script>
+  const html = document.getElementById('html');
+  const js = document.getElementById('js');
+  const output = document.getElementById('output');
+
+  function updateOutput() {
+    // Clear previous errors
+    document.getElementById('Error').textContent = '';
+
+    try {
+      const doc = output.contentDocument || output.contentWindow.document;
+      doc.open();
+      // Inject HTML and JS
+      doc.write(html.value + `<script>${js.value}<\/script>`);
+      doc.close();
+    } catch (err) {
+      document.getElementById('Error').textContent = err;
+    }
+  }
+
+  html.addEventListener('input', updateOutput);
+  js.addEventListener('input', updateOutput);
+
+  // Initial render
+  updateOutput();
+</script>
