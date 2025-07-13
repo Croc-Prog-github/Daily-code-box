@@ -6,7 +6,7 @@ Tutti i colori speciali hanno un'impostazione che dice con che velocità effettu
 
 ## Esempi:
 ```html
-  <script src="specialColors.js"></script>
+  <script src="special-colors.js"></script>
 
   <!-- Esempi -->
   <div class="glitter" animation-speed="2" colors="#ffffff,#ff00ff,#00ffff,#ffffff">✨ Glitter ✨</div>
