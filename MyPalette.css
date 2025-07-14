@@ -1,3 +1,10 @@
+/*
+  [MyPalette.css]
+  - This file contains a collection of CSS variables representing various colors.
+  - Each color is defined in the format: --color-name: #hexcode;
+  - The colors are organized into sections and sorted alphabetically for better readability.
+  Made by Croc-Prog-github with the <3
+*/
 :root {
   /* Sezione A */
   --abbronzatura: #d2b48c;
