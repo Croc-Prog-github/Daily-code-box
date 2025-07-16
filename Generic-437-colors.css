@@ -1,9 +1,20 @@
 /*
-  [MyPalette.css]
-  - This file contains a collection of CSS variables representing various colors.
-  - Each color is defined in the format: --color-name: #hexcode;
-  - The colors are organized into sections and sorted alphabetically for better readability.
-  Made by Croc-Prog-github with the <3
+  Generic-437-colors.css v1.0.0
+
+  🎨 Description:
+  This file defines a collection of CSS custom properties (variables) representing a wide range of colors.
+  Each color is written in the format: --color-name: #hexcode;
+
+  📁 Structure:
+  - Colors are grouped by category (e.g., primary, neutral, alerts)
+  - Within each section, variables are sorted alphabetically for better readability
+
+  📄 License:
+  Released under the CC BY 4.0 License. See repo: https://github.com/Croc-Prog-github/CSS-desiner-kit for more details.
+  Credit required: please attribute to "Croc-Prog-github" (https://github.com/Croc-Prog-github)
+  
+  👤 Author:
+  Made with ❤️ by Croc-Prog-github
 */
 :root {
   /* Sezione A */

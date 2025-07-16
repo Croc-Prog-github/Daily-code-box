@@ -1,0 +1,73 @@
+/*
+  [MyFonts.css]
+  - 
+  Made by Croc-Prog-github with the <3
+*/
+/*@font-face {
+  font-family: 'MyFonts';
+  src: url('https://example.com/fonts/MyFonts.woff2') format('woff2'),
+       url('https://example.com/fonts/MyFonts.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}*/
+:root {
+  --font-business: 'DM Serif Text', 'Kantumruy Pro', 'Slabo 13px', 'Hubot Sans', 'Inclusive Sans', Oswald, ;
+  --font-fancy: 'Lavishly Yours', Charm, Neonderthaw, Lugrasimo, Sacramento, 'Oleo Script Swash Caps';
+  --font-calm: ;
+}
+
+[style="font-feeling: business;"] {
+  font-family: var(--font-business);
+}
+[style="font-feeling: fancy;"] {
+  font-family: var(--font-fancy);
+}
+[style="font-feeling: calm;"] {
+  font-family: var(--font-calm);
+}
+[style="font-feeling: playful;"] {
+  font-family: var(--font-playful);
+}
+[style="font-feeling: cute;"] {
+  font-family: var(--font-cute);
+}
+[style="font-feeling: artistic;"] {
+  font-family: var(--font-artistic);
+}
+[style="font-feeling: vintage;"] {
+  font-family: var(--font-vintage);
+}
+[style="font-feeling: loud;"] {
+  font-family: var(--font-loud);
+}
+[style="font-feeling: sophisticated;"] {
+  font-family: var(--font-sophisticated);
+}
+[style="font-feeling: futuristic;"] {
+  font-family: var(--font-futuristic);
+}
+[style="font-feeling: active;"] {
+  font-family: var(--font-active);
+}
+[style="font-feeling: stiff;"] {
+  font-family: var(--font-stiff);
+}
+[style="font-feeling: innovative;"] {
+  font-family: var(--font-innovative);
+}
+[style="font-feeling: happy;"] {
+  font-family: var(--font-happy);
+}
+[style="font-feeling: childlike;"] {
+  font-family: var(--font-childlike);
+}
+[style="font-feeling: rugged;"] {
+  font-family: var(--font-rugged);
+}
+[style="font-feeling: awkward;"] {
+  font-family: var(--font-awkward);
+}
+[style="font-feeling: excited;"] {
+  font-family: var(--font-excited);
+}
+
