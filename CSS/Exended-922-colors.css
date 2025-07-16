@@ -1,6 +1,23 @@
+/*
+  Exended-922-colors.css v1.0.0
+
+  🎨 Description:
+  This file defines a more largest collection of 922 CSS custom variables representing a wide range of colors.
+
+  📁 Structure:
+  - Colors are grouped by category (e.g., primary, neutral, alerts)
+  - Within each section, variables are sorted alphabetically for better readability
+
+  📄 License:
+  Released under the CC BY 4.0 License. See repo: https://github.com/Croc-Prog-github/Daily-code-box for more details.
+  Credit required: please attribute to "Croc-Prog-github" (https://github.com/Croc-Prog-github)
+  
+  👤 Author:
+  Made with ❤️ by Croc-Prog-github
+*/
 :root {
   /* Sezione A */
-  --acidgreen: #8FFE09;
+  --adgreen: #8FFE09;
   --adobe: #BD6C48;
   --algae: #54AC68;
   --algaegreen: #21C36F;
