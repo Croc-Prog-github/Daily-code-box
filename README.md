@@ -1,3 +1,3 @@
 # Daily-code-box
 
-Una raccolta di micro librerie per piccoli usi quotidiani a scopo di diminuire, fin da subito, la quantità di codifica.
+Una raccolta di micro librerie e code snippets per aumentare la velocità e comodità della codifica, in modo da diminuire la qnt di codice scritto fin da subito.
